@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 class Address
 {
     private string _street;
@@ -13,7 +15,7 @@ class Address
         _zipCode = zipCode;
     }
 
-    public override string ToString()
+    public string DisplayAddress()
     {
         return $"{_street}, {_city}, {_state}, {_zipCode}";
     }

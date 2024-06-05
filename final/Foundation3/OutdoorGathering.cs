@@ -8,7 +8,7 @@ class OutdoorGathering : Event
         _weatherForecast = weatherForecast;
     }
 
-    public override string DisplayFullDetails()
+    public string DisplayFullDetails()
     {
         return $"{base.DisplayFullDetails()}\nType: Outdoor Gathering\nWeather Forecast: {_weatherForecast}";
     }

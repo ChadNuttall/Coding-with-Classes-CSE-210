@@ -10,7 +10,7 @@ class Lecture : Event
         _capacity = capacity;
     }
 
-    public override string DisplayFullDetails()
+    public string DisplayFullDetails()
     {
         return $"{base.DisplayFullDetails()}\nType: Lecture\nSpeaker: {_speaker}\nCapacity: {_capacity}";
     }

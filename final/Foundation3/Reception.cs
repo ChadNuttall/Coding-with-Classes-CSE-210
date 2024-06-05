@@ -8,7 +8,7 @@ class Reception : Event
         _rsvpEmail = rsvpEmail;
     }
 
-    public override string DisplayFullDetails()
+    public string DisplayFullDetails()
     {
         return $"{base.DisplayFullDetails()}\nType: Reception\nRSVP Email: {_rsvpEmail}";
     }

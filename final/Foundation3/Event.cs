@@ -15,17 +15,17 @@ class Event
         _address = address;
     }
 
-    public virtual string DisplayStandardDetails()
+    public string DisplayStandardDetails()
     {
-        return $"Title: {_title}\nDescription: {_description}\nDate: {_date}\nTime: {_time}\nAddress: {_address.ToString()}";
+        return $"Title: {_title}\nDescription: {_description}\nDate: {_date}\nTime: {_time}\nAddress: {_address.DisplayAddress()}";
     }
 
-    public virtual string DisplayFullDetails()
+    public string DisplayFullDetails()
     {
         return DisplayStandardDetails();
     }
 
-    public virtual string DisplayShortDescription()
+    public string DisplayShortDescription()
     {
         return $"Type: Event\nTitle: {_title}\nDate: {_date}";
     }
